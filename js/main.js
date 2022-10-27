@@ -217,6 +217,41 @@ if (K >= 222 && K > P) {
     }
 }
 //-----------------------------------------------------
-
-
-
+console.log("7a uzd"); 
+// vinies ilgis = 85, vienas ikalimas 5-20, 5 vinys, kiek reik smugiu
+var smugiuSk = 0;
+var gylis = 0;
+while(gylis < 85){
+    let smugis;
+    if(gylis < 81){
+        smugis =  Math.round(Math.random() * 15) + 5;
+    }else{
+        break;
+    }
+    gylis += smugis;
+        smugiuSk++;
+}
+console.log("gylis: " + gylis);
+console.log("reikejo " + smugiuSk + " smugiu");
+//----------------------------------------------------
+console.log("7b uzd"); 
+// vinies ilgis = 85, 5 vinys, vienas ikalimas 20-30, 50% tikimybe nepataikyti, kiek smugiu
+var smugiaiDid = 0;
+var gylis1 = 0;
+while(gylis1 < 85){
+    let smugis;
+    let tikimybe = Math.round(Math.random());
+    console.log("tikimybe: " + tikimybe);
+    if(tikimybe == 0){
+        smugiaiDid++;
+    }else{
+            smugis =  Math.round(Math.random() * 10) + 20;
+        
+        gylis1 += smugis;
+            smugiaiDid++;
+    }
+    
+}
+console.log("gylis: " + gylis1);
+console.log("reikejo " + smugiaiDid + " smugiu");
+//-----------------------------------------------------
