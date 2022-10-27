@@ -98,3 +98,27 @@ for (let i = 0; i < 100; i++) {
 }
 //-----------------------------------------
 console.log("4 uzd");
+// let element = document.getElementById("title");
+// let elementText = element.innerText;
+//console.log(elementText);
+let webElement = document.getElementById("title");
+
+let HTML = "";
+for (let i = 0; i < 10; i++) {
+    HTML += "<div>";
+    for (let a = 0; a < 10; a++) {
+        // if(a == 0 && a == 9){
+        //     HTML += "&";
+        //     webElement.style.color= "red";
+        // }else{
+            HTML += "*";
+            // webElement.style.color= "red";
+        }
+        
+    }
+    HTML += "</div>";
+
+webElement.innerHTML = HTML;
+
+//NEBAIGTAS
+//------------------------------------------------
