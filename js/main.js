@@ -111,12 +111,12 @@ for (let i = 0; i < 10; i++) {
         //     HTML += "&";
         //     webElement.style.color= "red";
         // }else{
-            HTML += "*";
-            // webElement.style.color= "red";
-        }
-        
+        HTML += "*";
+        // webElement.style.color= "red";
     }
-    HTML += "</div>";
+
+}
+HTML += "</div>";
 
 webElement.innerHTML = HTML;
 
@@ -127,12 +127,12 @@ console.log("5a uzd");
 let h = 0;
 let s = 0;
 result = 0;
-while(h == 0){
+while (h == 0) {
     result = Math.round(Math.random() * 1);
     console.log("Metimas: " + result);
-    if(result == 0){
+    if (result == 0) {
         h++;
-    }else{
+    } else {
         s++;
     }
 }
@@ -145,12 +145,12 @@ console.log("5b uzd");
 h = 0;
 s = 0;
 result = 0;
-while(h < 3){
+while (h < 3) {
     result = Math.round(Math.random() * 1);
     console.log("Metimas: " + result);
-    if(result == 0){
+    if (result == 0) {
         h++;
-    }else{
+    } else {
         s++;
     }
 }
@@ -164,12 +164,12 @@ h = 0;
 s = 0;
 result = 0;
 herb = 0;
-while(h < 3){
+while (h < 3) {
     result = Math.round(Math.random() * 1);
     console.log("Metimas: " + result);
-    if(result == 0){
+    if (result == 0) {
         h++;
-    }else{
+    } else {
         s++;
         h = 0;
         herb += 3;
@@ -179,3 +179,44 @@ console.log("Zaidimas baigtas");
 console.log("H: " + herb);
 console.log("S: " + s);
 //-------------------------------------------
+console.log("6 uzd"); 
+let K = 0;
+let P = 0;
+console.log("0 - P, 1 - K");
+pirmas = Math.round(Math.random());
+console.log(pirmas);
+if (pirmas = 0) {
+    while (P < 222 && K < 222) {
+        resultP = Math.round(Math.random() * 10) + 10;
+        P += resultP;
+        if (P > 221) {
+            break;
+        }
+        resultK = Math.round(Math.random() * 20) + 5;
+        K += resultK;
+    }
+} else {
+    while (P < 222 && K < 222) {
+        resultK = Math.round(Math.random() * 20) + 5;
+        K += resultK;
+        if (K > 221) {
+            break;
+        }
+        resultP = Math.round(Math.random() * 10) + 10;
+        P += resultP;
+    }
+}
+if (K >= 222 && K > P) {
+    console.log("Kazys: " + K + " tasku, " + "Petras: " + P + " tasku. Partiją laimėjo: Kazys");
+
+} else {
+    if (P >= 222 && P > K) {
+        console.log("Kazys: " + K + " tasku, " + "Petras: " + P + " tasku. Partiją laimėjo: Petras");
+    } else {
+        console.log("error");
+    }
+}
+//-----------------------------------------------------
+
+
+
