@@ -63,7 +63,7 @@ var mas = [];
 var str = "";
 var didesnisNei150 = 0;
 for (let i = 0; i < 301; i++) {
-    mas[i] = Math.round(Math.random() * 300);;
+    mas[i] = Math.round(Math.random() * 300);
     if (mas[i] > 275) {
         str = str + "[" + mas[i] + "]" + " ";
     } else {
@@ -122,3 +122,60 @@ webElement.innerHTML = HTML;
 
 //NEBAIGTAS
 //------------------------------------------------
+console.log("5a uzd");
+// 0 - herbas, 1 - skaicius
+let h = 0;
+let s = 0;
+result = 0;
+while(h == 0){
+    result = Math.round(Math.random() * 1);
+    console.log("Metimas: " + result);
+    if(result == 0){
+        h++;
+    }else{
+        s++;
+    }
+}
+console.log("Zaidimas baigtas");
+console.log("H: " + h);
+console.log("S: " + s);
+//------------------------------------------------
+console.log("5b uzd");
+// 0 - herbas, 1 - skaicius
+h = 0;
+s = 0;
+result = 0;
+while(h < 3){
+    result = Math.round(Math.random() * 1);
+    console.log("Metimas: " + result);
+    if(result == 0){
+        h++;
+    }else{
+        s++;
+    }
+}
+console.log("Zaidimas baigtas");
+console.log("H: " + h);
+console.log("S: " + s);
+//-----------------------------------------------
+console.log("5c uzd");
+// 0 - herbas, 1 - skaicius
+h = 0;
+s = 0;
+result = 0;
+herb = 0;
+while(h < 3){
+    result = Math.round(Math.random() * 1);
+    console.log("Metimas: " + result);
+    if(result == 0){
+        h++;
+    }else{
+        s++;
+        h = 0;
+        herb += 3;
+    }
+}
+console.log("Zaidimas baigtas");
+console.log("H: " + herb);
+console.log("S: " + s);
+//-------------------------------------------
